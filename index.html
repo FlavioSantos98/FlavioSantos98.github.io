@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="assets/icones/icon.png" type="image/png">
+    <title>Flávio Santos</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <img id="menu" class="inativo" src="assets/icones/menu.png" onclick="abrirMenu()">
+            <p>
+                <a href="#home">/* Flavio Santos */</a>
+            </p>
+            <ul>
+                <a href="#home">
+                    <li>Home</li>
+                </a>
+                <a href="#sobre">
+                    <li>Sobre</li>
+                </a>
+                <a href="#experiencias">
+                    <li>Experiências</li>
+                </a>
+                <a href="#projetos">
+                    <li>Projetos</li>
+                </a>
+            </ul>
+        </nav>
+    </header>
+    <main id="main">
+        <div class="menu-lateral" id="menuLateral">
+            <p><img onclick="mudarTema('principal')" src="assets/paletas/principal.png">Noite Estrelada</p>
+            <p><img onclick="mudarTema('safari')" src="assets/paletas/safari.png">Safari</p>
+            <p><img onclick="mudarTema('coral')" src="assets/paletas/coral.png">Coral</p>
+            <p><img onclick="mudarTema('cyberpunk')" src="assets/paletas/cyberpunk.png">Cyberpunk</p>
+        </div>
+
+        <section class="principal" id="home">
+            <div class="principal_cima">
+                <h1>Olá, eu sou</h1>
+                <span>FLÁVIO SANTOS</span>
+                <h1>E quero transformar códigos em sonhos!</h1>
+            </div>
+            <div class="principal_baixo">
+                <img id="icon" src="assets/icon.svg" alt="Ilustração de uma pessoa semelhante ao desenvolvedor" style="height: 300px; width: 300px;">
+            </div>
+        </section>
+        <section class="sobre-mim" id="sobre" data-anime="scroll">
+            <div class="foto">
+                <img id="perfil" src="assets/icon.svg" alt="Ilustração de uma pessoa semelhante ao desenvolvedor" style="height: auto; width: 100%;">
+            </div>
+            <div class="descricao">
+                <h1>QUEM É FLÁVIO?</h1>
+                <div class="caixa-sobre">
+                    <div class="texto-sobre tri-right left-top">
+                        <p>Resido em Rio Grande RS, curto tecnologia e artes, aprecio o desafio de criar designes, resolver problemas e criar experiências, como tenho a arte como grande influência a criatividade é uma das minhas habilidades.</p>
+                        <p>Como fã de basquete, filmes, séries, música, jogos, RPG de Mesa e curiosidades, acabei por desenvolver alguns projetos, voltados a essas áreas, em HTML, CSS e JavaScript.</p>
+                        <p>Após iniciar esses projetos me identifiquei muito com a área de front-end e estou animado e disposto a iniciar minha carreira, e trabalhar em projetos e dar vida a idéias tecnologias. Tenho comigo que essa é uma área em crescimento e quem quer  aprender e adquirir conhecimento tende a crescer.</p>
+                    </div>
+                </div>
+                <div class="botaosSobre">
+                    <a href="" download>
+                        <div class="curriculo">
+                            <img src="assets/icones/download.png" style="padding: 15px 0 15px">
+                            <p>Currículo</p>
+                        </div>
+                    </a>
+                    <a href="https://www.linkedin.com/in/fsantos98/" target="_blank">
+                        <div class="linkedin">
+                            <img src="assets/icones/linkedin.png" style="padding: 15px 0 15px">
+                            <p>LinkedIn</p>
+                        </div>
+                    </a>
+                    <a href="https://github.com/FlavioSantos98" target="_blank">
+                        <div class="github">
+                            <img src="assets/icones/github.png" style="padding: 15px 0 15px">
+                            <p>GitHub</p>
+                        </div>
+                    </a>
+                    <a href="mailto: flavio_ricardo_7@hotmail.com?subject=Flávio, vim pelo seu portfólio!" target="_blank">
+                        <div class="email">
+                            <img src="assets/icones/email.png" style="padding: 15px 0 15px">
+                            <p>Email</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+        <section class="experiencia" id="experiencias" data-anime="scroll">
+            <h1>EXPERIÊNCIAS</h1>
+            <div class="experiencia-wrapper">
+                <section class="experiencia_nome">
+                    <ul id="menu">
+                        <li class="ativo">Procurando 🔍</li>
+                        <li class>...</li>
+                        <li class>...</li>
+                        <li class>...</li>
+                    </ul>
+                </section>
+                <div class="experiencia_descricao" id="descricao">
+                    <section class="animacaoDireita ativo">
+                        <h2>Procurando pela minha primeira oportunidade</h2>
+                        <p>Estou à procura de experiências novas para crescer profissionalmente. Entre em contato pelas minhas redes :D</p>
+                    </section>
+                    <section class="animacaoDireita ">
+                        <h2>Ainda estou procurando...</h2>
+                        <p>Estou à procura de experiências novas para crescer profissionalmente. Entre em contato pelas minhas redes :D</p>
+                    </section>
+                    <section class="animacaoDireita ">
+                        <h2>Ainda estou procurando...</h2>
+                        <p>Estou à procura de experiências novas para crescer profissionalmente. Entre em contato pelas minhas redes :D</p>
+                    </section>
+                    <section class="animacaoDireita ">
+                        <h2>Ainda estou procurando...</h2>
+                        <p>Estou à procura de experiências novas para crescer profissionalmente. Entre em contato pelas minhas redes :D</p>
+                    </section>
+                </div>
+            </div>
+        </section>
+        <section class="projeto" id="projetos" data-anime="scroll">
+            <h1>PROJETOS</h1>
+            <div class="projetos_wrapper">
+                <section class="projetos_card">
+                    <a href="https://ricardinhosantos.com" target="_blank"><img id="projetos_foto" src="assets/projetos/ricardo.jpg"></a>
+                    <h2>Ricardo Santos</h2>
+                    <p>Site criado com base na história do baterista dono do site. Aventurei, aprendendo a operar mesclando Banco de Dados, PHP, e Front-End </p>
+                    <span>Tecnologias usadas: HTML, CSS, Javascript, PHP e phpMyAdmin</span>
+                </section>
+                <section class="projetos_card">
+                    <a href="https://flaviosantos98.github.io/gerador_de_frases/" target="_blank"><img id="projetos_foto" src="assets/projetos/quotes.png"></a>
+                    <h2>Gerador de Frases</h2>
+                    <p>Sistema simples que gera frases. Utilizei funções de menu lateral, Randon Number Generation (RNG) e modo Light/Dark</p>
+                    <span>Tecnologias usadas: HTML, CSS e Javascript</span>
+                </section>
+                <section class="projetos_card">
+                    <a href="https://flaviosantos98.github.io/form_nba/" target="_blank"><img id="projetos_foto" src="assets/projetos/nba.png"></a>
+                    <h2>Formulário NBA</h2>
+                    <p>Meu primeiro projeto como desenvolvedor, um formulário sobre conhecimento da National Basketball Association (NBA).</p>
+                    <span>Tecnologias usadas: HTML, CSS, Javascript e PHP</span>
+                </section>
+                <section class="projetos_card">
+                    <a href="https://flaviosantos98.github.io/curiosidades_de_filmes/" target="_blank"><img id="projetos_foto" src="assets/projetos/filmes.jpg"></a>
+                    <h2>Curiosidades de Filmes</h2>
+                    <p>Um projeto baseado em um modelo Parallax, contendo curiosidades sobre filmes, vídeos e fotos.</p>
+                    <span>Tecnologias usadas: HTML e CSS</span>
+                </section>
+                <section class="projetos_card">
+                    <a href="" target="_blank"><img id="projetos_foto" src="assets/projetos/construção.jpg"></a>
+                    <h2>Em Construção...</h2>
+                    <p></p>
+                    <span>Que a Força esteja com você!</span>
+                </section>
+            </div>
+        </section>
+    </main>
+</body>
+<script src="js/script.js"></script>
+</html>

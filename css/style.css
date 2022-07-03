@@ -1,0 +1,496 @@
+@import url('http://fonts.cdnfonts.com/css/elianto'); /* Fonte para títulos */
+@import url('http://fonts.cdnfonts.com/css/league-spartan'); /* Fonte para o corpo */
+
+:root {
+    --cor1: #1E295B;
+    --cor2: #DCD655;
+    --cor3: #D6D297;
+    --cor4: #322825;
+    --cor5: #79A49E;
+    --cor6: rgb(35, 46, 96);
+    --cor7: rgb(55, 66, 116);
+    --bgPaleta: rgb(65, 76, 126);
+    --fonte: white;
+}
+
+* {
+    scroll-behavior: smooth !important;
+}
+
+body, html {
+    font-family: 'League Spartan', sans-serif;
+    margin: 0;
+    color: var(--fonte);
+    background-color: var(--cor1);
+    transition: .8s;
+}
+
+main {
+    transition: 1.5s ease;
+}
+
+a {
+    text-decoration: none;
+}
+
+h3 {
+    font-family: 'Elianto', sans-serif;
+}
+
+.menu-lateral {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: var(--cor6);
+    overflow-x: hidden;
+    padding-top: 80px;
+    transition: .8s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+}
+
+.menu-lateral p {
+    width: 75px;
+    padding: 8px;
+    font-size: .6rem;
+    text-align: center;
+    background-color: var(--bgPaleta);
+    border-radius: 5px;
+    display: block;
+    transition: .8s ease;
+}
+
+.menu-lateral p:hover {
+    transform: scale(110%);
+}
+
+.menu-lateral img {
+    width: 75px;
+}
+
+header {
+    width: 100%;
+    z-index: 100;
+    position: fixed;
+    background-color: var(--cor6);
+    transition: .8s;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid var(--cor2);
+    padding: 0 10% 0 5%;
+    height: 75px;
+    transition: .5s;
+    animation-direction: normal;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-name: loopInfinito;
+    animation-timing-function: ease;
+}
+
+nav img {
+    margin-right: 10%;
+    transition: .8s ease;
+}
+
+nav img:hover {
+    transform: scale(125%);
+}
+
+nav p {
+    padding: 10px;
+    font-size: 1.2rem;
+    width: 80%;
+}
+
+nav p a {
+    color: var(--fonte);
+    transition: .5s;
+}
+
+nav p a:hover {
+    color: var(--cor2);
+}
+
+nav ul {
+    display: flex;
+    justify-content: end;
+}
+
+nav ul li {
+    list-style: none;
+    margin: 10px 30px;
+    color: var(--fonte);
+}
+
+nav ul li::after {
+    content: "";
+    display: block;
+    border-bottom: 2px solid var(--cor2);
+    margin-top: 2px;
+    transform: scaleX(0);
+    transition: .5s ease;
+}
+
+nav ul li:hover::after {
+    transform: scaleX(1);
+}
+
+.principal {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 60vh;
+}
+
+.principal span {
+    font-size: 2.5rem;
+    letter-spacing: 2px;
+}
+
+.principal, .sobre-mim, .experiencia, .projeto, .extra {
+    padding: 7.5% 15%;
+    min-height: 40vh;
+}
+
+.principal_cima {
+    margin: 0;
+    text-align: center;
+}
+
+.principal_baixo {
+    margin: 0;
+}
+
+.sobre-mim {
+    background-color: var(--cor6);
+    position: relative;
+    display: flex;
+    justify-content: space-around;
+}
+
+.foto {
+    width: 30%;
+    transition: .8s ease;
+}
+
+.descricao {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 70%;
+    margin: 0 10px;
+}
+
+.descricao p {
+    text-align: justify;
+    font-size: 1rem;
+}
+
+.caixa-sobre {
+	margin-bottom: 25px;
+    display: inline-block;
+    position: relative;
+	width: 100%;
+	height: auto;
+	background-color: var(--cor2);
+    -webkit-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, .5);
+    -moz-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, .5);
+    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, .5);
+}
+
+.borda {
+    border: 8px solid #666;
+}
+
+.tri-right.border.left-top:before {
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+    left: -40px;
+	right: auto;
+    top: -8px;
+	bottom: auto;
+	border: 32px solid;
+	border-color: #666 transparent transparent transparent;
+}
+
+.tri-right.left-top:after{
+	content: ' ';
+	position: absolute;
+	width: 0;
+	height: 0;
+    left: -20px;
+	right: auto;
+    top: 0px;
+	bottom: auto;
+	border: 22px solid;
+	border-color: var(--cor2) transparent transparent transparent;
+}
+
+.texto-sobre p {
+    margin: 15px 20px;
+}
+
+.botaosSobre {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.botaosSobre a {
+    -webkit-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, .5);
+    -moz-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, .5);
+    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, .5);
+}
+
+.botaosSobre p {
+    position: relative;
+    top: 2px;
+}
+
+.curriculo, .linkedin, .github, .email {
+    display: flex;
+    justify-content: space-around;
+    width: 120px;
+    color: var(--fonte);
+    border-radius: 5px;
+    border: 3px solid var(--cor2);
+    transition: .8s ease;
+}
+
+.curriculo:hover, .linkedin:hover, .github:hover, .email:hover {
+    border: 3px solid var(--cor5);
+    background-color: var(--cor7);
+}
+
+.experiencia-wrapper {
+    display: flex;
+}
+
+.experiencia_nome {
+    width: 20%;
+    cursor: pointer;
+}
+
+.experiencia_nome ul {
+    padding: 10px;
+    text-align: center;
+    transition: .8s ease;
+}
+
+.experiencia_nome ul li {
+    list-style: none;
+    border-bottom: 2px solid var(--cor2);
+    font-size: 1rem;
+    padding: 10px 5px 5px;
+    transition: .8s ease;
+}
+
+.experiencia_nome ul li:hover, .experiencia_nome ul li.ativo:hover {
+    background-color: var(--cor2);
+}
+
+.experiencia_nome ul li.ativo {
+    border-bottom: 2px solid var(--cor5);
+    background-color: var(--cor7);
+    font-weight: 600;
+}
+
+.experiencia_descricao {
+    width: 60%;
+    margin-left: 5rem;
+    position: relative;
+}
+
+.experiencia_descricao section {
+    display: none;
+}
+
+.experiencia_descricao section.ativo {
+    display: block;
+}
+
+.experiencia_descricao section.ativo.animacaoDireita {
+    animation: .8s forwards animacaoDireita;
+}
+
+.projeto {
+    background-color: var(--cor6);
+    position: relative;
+}
+
+.projetos_wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3% 10%;
+    margin-bottom: 5rem;
+}
+
+.projetos_card {
+    width: 100%;
+}
+
+.projetos_card h2 {
+    display: block;
+    margin: 1rem 0 1.5rem 0;
+    font-size: 1.4rem;
+}
+
+.projetos_card span {
+    display: block;
+    margin: 1.5rem 0 0 0;
+    font-size: .8rem;
+}
+
+#projetos_foto {
+    width: 100%;
+    height: auto;
+    filter: opacity(70%);
+    border-radius: 2px;
+    border-bottom: 2px solid var(--cor2);
+    transition: .8s ease;
+    -webkit-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, .5);
+    -moz-box-shadow: 0 8px 6px -6px rgba(0, 0, 0, .5);
+    box-shadow: 0 8px 6px -6px rgba(0, 0, 0, .5);
+}
+
+#projetos_foto:hover {
+    filter: opacity(100%);
+    border-bottom: 2px solid var(--cor5);
+}
+
+[data-anime="scroll"] {
+    opacity: 0;
+    transform: translate3d(0, -30px, 0);
+    transition: 1s;
+}
+  
+[data-anime="scroll"].animation {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--cor1);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--cor2);
+    border-radius: 5px; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: var(--cor3);
+}
+
+@keyframes animacaoDireita {
+    0% {
+        opacity: 0;
+        transform: translate3d(0, 30px, 0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+@keyframes loopInfinito {
+    0% { border-color: var(--cor1);}
+    20% { border-color: var(--cor2);}
+    40% { border-color: var(--cor3);}
+    60% { border-color: var(--cor4);}
+    80% { border-color: var(--cor5);}
+    100% { border-color: var(--cor1);}
+}
+
+@media only screen and (max-width: 768px) {
+    
+    .menu-lateral p {
+        width: 120px;
+        padding: 8px;
+        font-size: .9rem;
+    }
+    
+    .menu-lateral img {
+        width: 120px;
+    }
+
+    nav p {
+        padding: 10px;
+        font-size: 1rem;
+        width: 65%;
+    }
+    
+    nav ul {
+        display: none;
+    }
+
+    
+    .principal span {
+        font-size: 1.5rem;
+    }
+
+    .principal, .sobre-mim, .experiencia, .projeto, .extra {
+        padding: 25% 10%;   
+        text-align: center;
+    }
+
+    .sobre-mim {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .descricao {
+        width: 80%;
+    }
+
+    .botaosSobre {
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .curriculo, .linkedin, .github, .email {
+        width: 150px;
+    }
+
+    .experiencia-wrapper {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .experiencia_nome {
+        width: 80%;
+    }
+
+    .experiencia_descricao {
+        width: 80%;
+        margin-left: 0;
+    }
+
+    .projetos_wrapper {
+        grid-template-columns: 1fr;
+        gap: 2%;
+    }
+
+    .tri-right.border.left-top:before, .tri-right.left-top:after {
+        display: none;
+    }
+}
