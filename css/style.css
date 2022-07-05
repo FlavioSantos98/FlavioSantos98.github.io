@@ -183,6 +183,10 @@ nav ul li:hover::after {
     transition: .8s ease;
 }
 
+.foto img {
+    border-radius: 50%;
+}
+
 .descricao {
     display: flex;
     flex-direction: column;
