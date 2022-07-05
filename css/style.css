@@ -442,6 +442,10 @@ nav ul li:hover::after {
         display: none;
     }
 
+    .foto {
+	width: 70%;
+    }
+	
     
     .principal span {
         font-size: 1.5rem;
